@@ -20,6 +20,7 @@ func init() {
 }
 
 func main() {
+	pkg.BinName = "tc-agent"
 	err := gs.Run(&agent.QjtService{})
 	z.L().Debug("程序结束", zap.Error(err))
 
